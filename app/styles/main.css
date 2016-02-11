@@ -1,0 +1,9 @@
+.panel {
+  height: 300px;
+}
+.list-group-item {
+  margin-top: 8px;
+}
+.doneG {
+  text-decoration: line-through;
+}

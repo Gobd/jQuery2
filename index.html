@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Listo</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-<body>
+  <head>
+    <title>Listo</title>
+    <script type="text/javascript" src="app/scripts/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="app/scripts/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+  </head>
+  <body>
+
+    <form id="newTaskForm">
+      <label>New Item</label>
+      <input type="text" id="newItemInput" placeholder="Add task here">
+      <button id="saveNewItem">Save</button>
+      <button id="cancel">Cancel</button>
+    </form>
+
+    <div class="panel">
+      <ul class="list-group" id="newList"><li>New List</li></ul>
+      <ul class="list-group2" id="newListw"></ul>
+      <ul class="list-group" id="currentList"><li>In Progress</li></ul>
+      <ul class="list-group2" id="currentListw"></ul>
+      <ul class="list-group" id="archivedList"><li>Archived</li></ul>
+      <ul class="list-group2 doneG" id="archivedListw"></ul>
+    </div>
 
 
+    <div class="hideButtons">
+      <button id="allButton">All</button>
+      <button id="activeButton">Active</button>
+      <button id="doneButton">Done</button>
+      <button id="clearButton">Clear</button>
+    </div>
 
-
-	<script type="text/javascript" src="app/scripts/jquery-2.2.0.js"></script>
-	<script type="text/javascript" src="app/scripts/app.js"></script>
-</body>
+  </body>
 </html>
